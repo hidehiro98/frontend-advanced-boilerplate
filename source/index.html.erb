@@ -44,39 +44,19 @@
   <div class="container">
     <h2 class="text-center">Your next trip</h2>
     <div class="row">
+    <% data.flats.each do |name, info| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-          <div class="card-category">Paris</div>
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/<%= info["image"] %>');">
+          <div class="card-category"><%= info["location"] %></div>
           <div class="card-description">
-            <h2>Seb's home</h2>
-            <p>Charming room with patio</p>
+            <h2><%= info["title"] %></h2>
+            <p><%= info["description"] %></p>
           </div>
-          <img class="card-user avatar avatar-large" src="images/seb.jpg">
-          <a class="card-link" href="#" ></a>
+          <img class="card-user avatar avatar-large" src="images/<%= info["owner_image"] %>">
+          <a class="card-link" href="flats/<%= name %>.html" ></a>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-          <div class="card-category">Brussels</div>
-          <div class="card-description">
-            <h2>Anne's home</h2>
-            <p>Lovely house</p>
-          </div>
-          <img class="card-user avatar avatar-large" src="images/anne.jpg">
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-          <div class="card-category">London</div>
-          <div class="card-description">
-            <h2>Romain's home</h2>
-            <p>Nice flat in Piccadilly</p>
-          </div>
-          <img class="card-user avatar avatar-large" src="images/romain.jpeg">
-          <a class="card-link" href="#" ></a>
-        </div>
-      </div>
+    <% end %>
     </div>
   </div>
 </div>
@@ -116,4 +96,3 @@ var marker = new google.maps.Marker({
 
 <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

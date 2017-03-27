@@ -1,20 +1,24 @@
-- name: nicola
+nicola:
+  owner: nicola
   location: Paris
   description: Nice view
   title: Flat in Paris
-  image: background.png
-  owner_image: middleman.png
-
-- name: nicola
-  location: Paris
-  description: Nice view
-  title: Flat in Paris
-  image: background.png
-  owner_image: middleman.png
-
-- name: nicola
-  location: Paris
-  description: Nice view
-  title: Flat in Paris
-  image: background.png
-  owner_image: middleman.png
+  image: card-paris.jpg
+  owner_name: Nicolas Duchemin
+  owner_image: nicola.jpeg
+alicia:
+  owner: alicia
+  location: Kamata
+  description: Lovely house
+  title: Flat in Kamata
+  image: card-brussels.jpeg
+  owner_name: Alicia Bolton
+  owner_image: alicia.jpeg
+hide:
+  owner: hide
+  location: Yokohama
+  description: Near the port city
+  title: Flat in Yokohama
+  image: card-london.jpeg
+  owner_name: Hidehiro Nagaoka
+  owner_image: hide.jpeg
