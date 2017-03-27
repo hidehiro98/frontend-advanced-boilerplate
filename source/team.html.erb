@@ -1,0 +1,11 @@
+<h2 class="text-center">My team</h2>
+
+
+<ul class="list-inline text-center">
+<% %w(alicia hide).each do |member| %>
+  <li>
+    <%= image_tag "images/#{member}.jpeg", id: "logo", class: "img-circle avatar-large" %>
+    <p><%= member.capitalize %></p>
+  </li>
+<% end %>
+</ul>

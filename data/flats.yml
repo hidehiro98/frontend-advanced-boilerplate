@@ -1,0 +1,20 @@
+- name: nicola
+  location: Paris
+  description: Nice view
+  title: Flat in Paris
+  image: background.png
+  owner_image: middleman.png
+
+- name: nicola
+  location: Paris
+  description: Nice view
+  title: Flat in Paris
+  image: background.png
+  owner_image: middleman.png
+
+- name: nicola
+  location: Paris
+  description: Nice view
+  title: Flat in Paris
+  image: background.png
+  owner_image: middleman.png
